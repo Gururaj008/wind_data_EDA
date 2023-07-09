@@ -2877,19 +2877,20 @@ if __name__=='__main__':
                         """, unsafe_allow_html=True)
 
     if selected == 'Animated charts':
+        st.divider()
         
         if st.button('🎆 Show me how wind speed varies with wind direction in different seasons 🎆',use_container_width=True):
             df1 = pd.read_csv('wind_Mansoon.csv')
-            df1 = df1.drop(columns=['Unnamed: 0'],axis=1)
+            #df1 = df1.drop(columns=['Unnamed: 0'],axis=1)
             
             df2 = pd.read_csv('wind_Post_mansoon.csv')
-            df2 = df2.drop(columns=['Unnamed: 0'],axis=1)
+            #df2 = df2.drop(columns=['Unnamed: 0'],axis=1)
             
             df3 = pd.read_csv('wind_Winter.csv')
-            df3 = df3.drop(columns=['Unnamed: 0'],axis=1)
+            #df3 = df3.drop(columns=['Unnamed: 0'],axis=1)
             
             df4 = pd.read_csv('wind_Summer.csv')
-            df4 = df4.drop(columns=['Unnamed: 0'],axis=1)
+            #df4 = df4.drop(columns=['Unnamed: 0'],axis=1)
             
             df_new = df1.drop(columns=['DT','Year','Month','Day','Hour','Min','Temp','RH','PR','RA','IR','WD2','WS_cat','Temp_cat','RH_cat','PR_cat','IR_cat'],axis=1)
             df_new = df_new.groupby('WD').mean()
@@ -2936,6 +2937,7 @@ if __name__=='__main__':
             with col102:
                 st.image('legend_1.jpg')
 
+        st.divider()
         if st.button('🎆 Show me how wind speed varies with wind direction in different months 🎆',use_container_width=True):
             df1 = pd.read_csv('wind_January.csv')
             df1 = df1.drop(columns=['Unnamed: 0'],axis=1)
