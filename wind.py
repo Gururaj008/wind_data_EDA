@@ -1487,11 +1487,11 @@ if __name__=='__main__':
         st.markdown('<div style="text-align: justify"> Finally,i would like to thank https://www.soda-pro.com/ for providing access to their dataset which made this research activity possible. </div>', unsafe_allow_html=True)
         st.write('')
         
-        st.divider()    
-        st.subheader(':orange[✒️ About the developer]')
-        st.write('')
-        st.markdown('<div style="text-align: justify">Gururaj H C is passionate about Machine Learning and fascinated by its myriad real world applications. Possesses work experience with both IT industry and academia. Currently pursuing “IIT-Madras Certified Advanced Programmer with Data Science Mastery Program” course as a part of his learning journey.  </div>', unsafe_allow_html=True)
-        st.divider()
+        # st.divider()    
+        # st.subheader(':orange[✒️ About the developer]')
+        # st.write('')
+        # st.markdown('<div style="text-align: justify">Gururaj H C is passionate about Machine Learning and fascinated by its myriad real world applications. Possesses work experience with both IT industry and academia. Currently pursuing “IIT-Madras Certified Advanced Programmer with Data Science Mastery Program” course as a part of his learning journey.  </div>', unsafe_allow_html=True)
+        # st.divider()
         col1001, col1002, col1003 = st.columns([10,10,10])
         with col1002:
             st.markdown("""
